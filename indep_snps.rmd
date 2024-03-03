@@ -1,0 +1,32 @@
+#####################################################################################################
+# File: indep_snps.rmd
+#
+# Created by Jeanne N. Samake on June 2022 
+# Based on script originally written by Philip Lavretsky 
+# For use in R
+#
+# Description: Filter bi-allelic SNPs for singletons and snps in linkage disequilibrium 
+# to generate an #independent bi-allelic SNPs dataset in PLINK format.
+#
+#NOTE: This script requires PLINK v1.9
+#####################################################################################################
+
+#Run Plink
+#(1) Filter SNPs for singletons (--maf 0.004), any SNP missing >20% of data across samples (--geno 0.2), and pairwise analysis of LD (--indep-pairwise 2 1 0.5) in which one of two linked SNPs is randomly excluded if an LD correlation factor (r2)>0.5 is obtained. 
+```{r }
+system("./plink --file autosomal.plink --allow-extra-chr --maf 0.004 --geno 0.20 --indep-pairwise 2 1 0.5 --allow-no-sex --noweb --out autosomal.plink")
+```
+
+#(2) Prune out/in
+```{r }
+system("./plink --file autosomal.plink --maf 0.004 --geno 0.20 --extract autosomal.plink.prune.in --allow-no-sex --make-bed --out autosomal.plink.INDEP --noweb")
+```
+
+
+#(3) Final dataset
+```{r }
+system("./plink --file autosomal.plink --maf 0.004 --geno 0.20 --extract autosomal.plink.prune.in --allow-no-sex --recode --out autosomal.plink.INDEP --noweb")
+```
+
+
+
