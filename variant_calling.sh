@@ -1,7 +1,7 @@
 #####################################################################################################################################################################################################
 # File: variant_calling.sh
 #
-# Created by Jeanne N. Samake on June 2022
+# Created by Jeanne N. Samake in June 2022
 # Filtering was based on script originally written by Philip Lavretsky on 10 August 2021 
 # 
 #

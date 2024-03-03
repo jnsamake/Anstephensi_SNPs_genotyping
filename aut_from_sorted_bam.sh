@@ -1,7 +1,7 @@
 ##################################################################################################
 # File: aut_from_sorted_bam.sh
 #
-# Created by Jeanne N. Samake on June 2022
+# Created by Jeanne N. Samake in June 2022
 # 
 #
 # Description: extract autosomal regions from sorted bam files
