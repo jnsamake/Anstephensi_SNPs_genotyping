@@ -1,2 +1,2 @@
 # Anstephensi_SNPs_genotyping
-A repository for _Anopheles stephensi_ SNPs genotyping and variant calling 
+A repository for _Anopheles stephensi_ SNPs genotyping and variant calling from reduced representation genetic data.
