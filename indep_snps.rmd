@@ -1,7 +1,7 @@
 #####################################################################################################
 # File: indep_snps.rmd
 #
-# Created by Jeanne N. Samake on June 2022 
+# Created by Jeanne N. Samake in June 2022 
 # Based on script originally written by Philip Lavretsky 
 # For use in R
 #
